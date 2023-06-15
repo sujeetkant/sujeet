@@ -1,0 +1,14 @@
+ng new buy-sell
+ng serve -o
+
+ng generate component listings-page
+
+npm install @hapi/hapi
+npm install --save-dev @babel/core @babel/node @babel/preset-env @babel/plugin-transform-runtime @babel/runtime
+npm init -y
+npx babel-node src/server.js
+
+npm install --save-dev nodemon
+npx nodemon --exec npx babel-node src/server.js
+
+
